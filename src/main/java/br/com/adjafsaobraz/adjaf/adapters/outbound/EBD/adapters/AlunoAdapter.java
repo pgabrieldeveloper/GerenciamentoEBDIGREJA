@@ -24,6 +24,7 @@ public class AlunoAdapter implements AlunoPortOut {
                         .cdClasse(aluno.getCdClasse())
                         .build();
        AlunoEntity alunoEntity1 = repositorio.save(alunoEntity);
+
        return new Aluno(alunoEntity1.getId(), alunoEntity1.getNome(), alunoEntity1.getIdade(), alunoEntity1.getCdClasse());
     }
 
